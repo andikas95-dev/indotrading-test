@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="/assets/lib/fontawesome/css/all.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+
+        <!-- Scrollbar Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        />
+
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <!-- As a heading -->
+            <nav class="navbar navbar--custom fixed-top px-5">
+                <div class="left-navbar">
+                    <i class="fas fa-bars mr-3" style="font-size: 2rem;"></i>
+                    <h1 class="navbar-brand mb-0" style="font-size: 2rem;">
+                        Chukwudi
+                    </h1>
+                    <div class="main">
+                        <!-- Actual search box -->
+                        <div class="form-group has-search">
+                            <div class="search-size" style="padding: 0.25rem;">
+                                <span
+                                    class="fa fa-search form-control-feedback"
+                                ></span>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Search"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <div class="dropdown">
+                        <a
+                            class="btn"
+                            href="#"
+                            role="button"
+                            id="user-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <i class="far fa-user"></i>
+                        </a>
+                        <div
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="user-dropdown"
+                            style="width: 14rem;"
+                        >
+                            <form class="p-3">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"
+                                        >Email address</label
+                                    >
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="exampleInputEmail1"
+                                        aria-describedby="emailHelp"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1"
+                                        >Password</label
+                                    >
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="exampleInputPassword1"
+                                    />
+                                </div>
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary btn-block"
+                                >
+                                    Login
+                                </button>
+                            </form>
+                            <small class="d-flex justify-content-center"
+                                >Not Registered?
+                                <a href="#">Create an account</a></small
+                            >
+                        </div>
+                    </div>
+                    <div class="dropdown notif">
+                        <a
+                            class="btn"
+                            href="#"
+                            role="button"
+                            id="user-dropdown"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <ul
+                            class="dropdown-menu dropdown-menu-right"
+                            aria-labelledby="user-dropdown"
+                            style="width: 14rem;"
+                        >
+                            <li role="presentation">
+                                <a href="#" class="dropdown-menu-header"
+                                    >Notifications</a
+                                >
+                            </li>
+                            <form class="p-3">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"
+                                        >Email address</label
+                                    >
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="exampleInputEmail1"
+                                        aria-describedby="emailHelp"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1"
+                                        >Password</label
+                                    >
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="exampleInputPassword1"
+                                    />
+                                </div>
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary btn-block"
+                                >
+                                    Login
+                                </button>
+                            </form>
+                            <small class="d-flex justify-content-center"
+                                >Not Registered?
+                                <a href="#">Create an account</a></small
+                            >
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <!-- Page Content  -->
+            <div id="content" class="active">
+                <div class="jumbotron jumbotron--custom">
+                    <h1 class="font-weight-bold text-center">
+                        $0 delivery for 30 days!
+                    </h1>
+                    <p class="text-center">
+                        $0 delivery fee for orders over $10 for 30 days
+                    </p>
+                    <a
+                        style="position: absolute; right: 6rem; color: #fb6e3b;"
+                        href="#"
+                        role="button"
+                        >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                </div>
+                <div class="restaurant-category">
+                    <div class="restaurant-header">
+                        <h2 class="font-weight-bold">Restaurants</h2>
+                        <button class="btn btn--custom--delivery">
+                            <i class="far fa-clock mr-2"></i> Delivery:
+                            <span class="font-weight-bold">Now</span>
+                        </button>
+                    </div>
+                    <ul class="categories">
+                        <li class="item-category active">
+                            <i class="fas fa-stroopwafel"></i>
+                            <p class="text-dark text-center mt-2">All</p>
+                        </li>
+                        <li class="item-category">
+                            <i class="fas fa-pizza-slice"></i>
+                            <p class="text-dark text-center mt-2">Pizza</p>
+                        </li>
+                        <li class="item-category">
+                            <i class="fas fa-pizza-slice"></i>
+                            <p class="text-dark text-center mt-2">Pizza</p>
+                        </li>
+                        <li class="item-category">
+                            <i class="fas fa-pizza-slice"></i>
+                            <p class="text-dark text-center mt-2">Pizza</p>
+                        </li>
+                        <li class="item-category">
+                            <i class="fas fa-pizza-slice"></i>
+                            <p class="text-dark text-center mt-2">Pizza</p>
+                        </li>
+                        <li class="item-category">
+                            <i class="fas fa-pizza-slice"></i>
+                            <p class="text-dark text-center mt-2">Pizza</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list--menu--category">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card card-custom">
+                                <img
+                                    class="card-img-top"
+                                    src="/assets/img/food.jpg"
+                                    alt=""
+                                />
+                                <div class="card-body card-body-custom">
+                                    <h5 class="card-title">Bagel Story</h5>
+                                    <div class="detail d-flex">
+                                        <i class="far fa-star mr-1"></i>
+                                        <small class="mr-3">4.7</small>
+                                        <small class="mr-3">Deli</small>
+                                        <small class="mr-3">Bagels</small>
+                                        <small>$$</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card card-custom">
+                                <img
+                                    class="card-img-top"
+                                    src="/assets/img/food.jpg"
+                                    alt=""
+                                />
+                                <div class="card-body card-body-custom">
+                                    <h5 class="card-title">The Estaminet</h5>
+                                    <div class="detail d-flex">
+                                        <i class="far fa-star mr-1"></i>
+                                        <small class="mr-3">4.5</small>
+                                        <small class="mr-3">Cafes</small>
+                                        <small class="mr-3">Creperies</small>
+                                        <small>$</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card card-custom">
+                                <img
+                                    class="card-img-top"
+                                    src="/assets/img/food.jpg"
+                                    alt=""
+                                />
+                                <div class="card-body card-body-custom">
+                                    <h5 class="card-title">Le Paris Dakar</h5>
+                                    <div class="detail d-flex">
+                                        <i class="far fa-star mr-1"></i>
+                                        <small class="mr-3">4.6</small>
+                                        <small class="mr-3">Creperies</small>
+                                        <small class="mr-3">Sandwich</small>
+                                        <small>$$</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card card-custom">
+                                <img
+                                    class="card-img-top"
+                                    src="/assets/img/food.jpg"
+                                    alt=""
+                                />
+                                <div class="card-body card-body-custom">
+                                    <h5 class="card-title">Bagel Story</h5>
+                                    <div class="detail d-flex">
+                                        <i class="far fa-star mr-1"></i>
+                                        <small class="mr-3">4.7</small>
+                                        <small class="mr-3">Deli</small>
+                                        <small class="mr-3">Bagels</small>
+                                        <small>$$</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card card-custom">
+                                <img
+                                    class="card-img-top"
+                                    src="/assets/img/food.jpg"
+                                    alt=""
+                                />
+                                <div class="card-body card-body-custom">
+                                    <h5 class="card-title">The Estaminet</h5>
+                                    <div class="detail d-flex">
+                                        <i class="far fa-star mr-1"></i>
+                                        <small class="mr-3">4.5</small>
+                                        <small class="mr-3">Cafes</small>
+                                        <small class="mr-3">Creperies</small>
+                                        <small>$</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card card-custom">
+                                <img
+                                    class="card-img-top"
+                                    src="/assets/img/food.jpg"
+                                    alt=""
+                                />
+                                <div class="card-body card-body-custom">
+                                    <h5 class="card-title">Le Paris Dakar</h5>
+                                    <div class="detail d-flex">
+                                        <i class="far fa-star mr-1"></i>
+                                        <small class="mr-3">4.6</small>
+                                        <small class="mr-3">Creperies</small>
+                                        <small class="mr-3">Sandwich</small>
+                                        <small>$$</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button
+                            type="button"
+                            id="sidebarCollapse"
+                            class="btn btn-info"
+                        >
+                            <i class="fas fa-align-left"></i>
+                            <span>Toggle Sidebar</span>
+                        </button>
+                        <button
+                            class="btn btn-dark d-inline-block d-lg-none ml-auto"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarSupportedContent"
+                        >
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav> -->
+            </div>
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <i class="fas fa-times" id="close-sidebar"></i>
+                <div class="sidebar-header">
+                    <h3 class="font-weight-bold">My Order</h3>
+                </div>
+
+                <div class="card card--sidebar--custom py-3">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="address-customer">
+                                <p class="text-white">625 St Marks Ave</p>
+                                <button class="btn text--custom--orange mb-0">
+                                    Edit
+                                </button>
+                            </div>
+                            <div class="time-customer">
+                                <div class="time-custom">
+                                    <div class="badge badge--custom--time">
+                                        <i
+                                            class="far fa-clock"
+                                            style="font-size: 18px;"
+                                        ></i>
+                                    </div>
+                                    <p>35 Min</p>
+                                </div>
+                                <button class="btn text--custom--orange mb-0">
+                                    Choose time
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list--menu">
+                    <div class="detail--menu">
+                        <img src="/assets/img/food.jpg" alt="" />
+                        <div class="menu--name">
+                            <p class="total--food">1 <span>x</span></p>
+                            <p class="food--name">Beach BBQ Burger</p>
+                        </div>
+                        <p class="price">$14.99</p>
+                    </div>
+                    <div class="detail--menu">
+                        <img src="/assets/img/food.jpg" alt="" />
+                        <div class="menu--name">
+                            <p class="total--food">1 <span>x</span></p>
+                            <p class="food--name">French Fries</p>
+                        </div>
+                        <p class="price">$9.99</p>
+                    </div>
+                    <div class="detail--menu">
+                        <img src="/assets/img/food.jpg" alt="" />
+                        <div class="menu--name">
+                            <p class="total--food">1 <span>x</span></p>
+                            <p class="food--name">Cheese Sauce</p>
+                        </div>
+                        <p class="price">$0.99</p>
+                    </div>
+                    <div class="detail--menu">
+                        <img src="/assets/img/food.jpg" alt="" />
+                        <div class="menu--name">
+                            <p class="total--food">1 <span>x</span></p>
+                            <p class="food--name">Delivery</p>
+                        </div>
+                        <p class="price">$0.00</p>
+                    </div>
+                </div>
+
+                <div class="total--price">
+                    <h3>Total:</h3>
+                    <h3 class="font-weight-bold">$25.97</h3>
+                </div>
+
+                <div class="checkout">
+                    <div class="person">
+                        <p>persons</p>
+                        <div class="btn-group" role="group">
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn-group-custom"
+                                id="minus"
+                            >
+                                -
+                            </button>
+                            <p
+                                style="
+                                    width: 2rem;
+                                    margin-bottom: 0;
+                                    text-align: center;
+                                "
+                                id="number"
+                            >
+                                1
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn-group-custom"
+                                id="plus"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn-checkout">
+                        Checkout <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="/assets/js/bootstrap.bundle.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="/assets/lib/owlcarousel/owl.carousel.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal",
+                });
+
+                $(".card-custom").on("click", function () {
+                    $("#sidebar, #content").toggleClass("active");
+                    $(".collapse.in").toggleClass("in");
+                    // $("a[aria-expanded=true]").attr("aria-expanded", "false");
+                });
+
+                $("#close-sidebar").on("click", function () {
+                    $("#sidebar, #content").toggleClass("active");
+                    $(".collapse.in").toggleClass("in");
+                });
+
+                // $(".categories").owlCarousel();
+
+                $("#plus").click(function () {
+                    $("#number").html(function (i, val) {
+                        return val * 1 + 1;
+                    });
+                });
+
+                $("#minus").click(function () {
+                    $("#number").html(function (i, val) {
+                        return val * 1 - 1;
+                    });
+                });
+
+                $(".item-category").on("click", function () {
+                    $(".item-category").removeClass("active");
+                    $(this).toggleClass("active");
+                });
+            });
+        </script>
+    </body>
+</html>

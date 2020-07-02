@@ -1,0 +1,416 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    NAVIGATION BAR
+----------------------------------------------------- */
+
+.navbar--custom {
+    background-color: transparent;
+    box-shadow: none;
+}
+.navbar--custom .left-navbar {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+h1.navbar-brand {
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+}
+.main {
+    margin-left: 2rem;
+    width: 50%;
+    /* margin: 50px auto; */
+}
+
+.main .form-group {
+    margin: 0;
+}
+.main .form-group .form-control-feedback {
+    color: #2d2d2d;
+}
+.main .form-group .form-control {
+    border-radius: 0.75rem;
+    color: #b5b5b5;
+    background-color: #f8f8f7;
+}
+
+/* text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* Menu User */
+.icon {
+    display: flex;
+}
+.notif {
+    background-color: #fcd561;
+    border-radius: 0.5rem;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+.jumbotron--custom {
+    background-color: #fff7ed;
+}
+.jumbotron--custom h1 {
+    color: #fb6e3b;
+}
+
+.restaurant-category .restaurant-header {
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant-category .restaurant-header .btn--custom--delivery {
+    background-color: #fb6d3a;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0px 20px;
+}
+.restaurant-category .restaurant-header .btn--custom--delivery:active {
+    background-color: #fca381;
+}
+
+/* ---------------------------------------------------
+    CATEGORIES STYLE
+----------------------------------------------------- */
+
+.categories {
+    display: flex;
+    margin: 1em 0;
+    overflow-x: scroll;
+    width: 100%;
+    list-style: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.categories .item-category {
+    padding: 2rem 1rem;
+    background-color: #e9e9e9;
+    border-radius: 100rem;
+    margin-right: 1.5rem;
+    scroll-behavior: auto;
+}
+
+.categories .item-category.active {
+    padding: 2rem 1rem;
+    background-color: #fcd561;
+    border-radius: 100rem;
+}
+
+.categories .item-category i {
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    border: 1px solid #f0f0f0;
+}
+.categories .item-category p {
+    font-weight: 600;
+}
+
+/* ---------------------------------------------------
+    CARD MENU STYLE
+----------------------------------------------------- */
+.card-custom {
+    background-color: transparent;
+    border: 0;
+}
+.card-custom:hover {
+    cursor: pointer;
+}
+.card-custom .card-img-top {
+    border-radius: 15px;
+}
+.card-body-custom {
+    background-color: transparent;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 350px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #f4f4f4;
+    color: #000;
+    transition: all 0.3s;
+    padding: 0 2rem;
+    padding-top: 3rem;
+}
+
+#sidebar.active {
+    margin-right: -350px;
+}
+
+#sidebar .fas.fa-times#close-sidebar {
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
+    cursor: pointer;
+}
+
+#sidebar .sidebar-header {
+    /* padding: 20px 0; */
+    margin-top: 30px;
+}
+
+#sidebar .sidebar-header h3 {
+    width: 1rem;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.card.card--sidebar--custom {
+    background-color: #503e9d;
+    border-radius: 0.75rem;
+}
+
+.address-customer,
+.time-customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text--custom--orange {
+    color: #fcd561;
+    background-color: transparent;
+}
+
+.text--custom--orange:active {
+    background-color: #796dac;
+}
+
+.time-custom {
+    display: flex;
+    align-items: center;
+}
+
+.time-custom p {
+    margin-bottom: 0;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.badge.badge--custom--time {
+    background-color: #796dac;
+    color: #fcd561;
+    padding: 0.6rem;
+}
+
+.list--menu {
+    margin-top: 2rem;
+    height: 200px;
+    overflow: auto;
+}
+
+.list--menu::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+.list--menu::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+}
+
+.list--menu::-webkit-scrollbar-thumb {
+    background-color: #fcd561;
+}
+
+.list--menu .detail--menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.list--menu .detail--menu img {
+    width: 60px;
+    border-radius: 0.5rem;
+}
+
+.list--menu .detail--menu .menu--name {
+    display: flex;
+    align-items: center;
+}
+
+.list--menu .detail--menu .menu--name p {
+    margin: 0;
+    color: #000;
+    font-weight: 600;
+}
+.list--menu .detail--menu .menu--name p.total--food {
+    margin-right: 1.3em;
+}
+.list--menu .detail--menu .menu--name p.food--name {
+    width: 7rem;
+    line-height: 1.3em;
+}
+.list--menu .detail--menu p.price {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.total--price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+.checkout {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.checkout .btn-group-custom {
+    padding: 0.1rem 0.75rem;
+}
+.checkout .btn-checkout {
+    background-color: #fcd561;
+    padding: 1rem 2rem;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 350px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    margin-top: 3rem;
+}
+
+#content.active {
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+    .categories {
+        width: 45rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        width: 100%;
+    }
+    #sidebar.active {
+        margin-left: 0;
+        margin-right: -400px;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    .categories {
+        width: 28rem;
+    }
+}
+
+@media (max-width: 681px) {
+    .main {
+        display: none;
+    }
+    .navbar--custom .left-navbar {
+        width: unset;
+    }
+}
